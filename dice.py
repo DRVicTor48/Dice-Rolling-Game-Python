@@ -39,15 +39,15 @@ while option != 4:
             'Dice-Unbiased Dice (20 points)\n'))
         if dice_opt == 1:
             print("\nRed Dice Selected")
-        elif dice_opt == 2 & point == 10:
-            dice=2
+        elif dice_opt == 2 & point >= 10:
+            dice = 2
             print('\n Blue Dice Selected')
-        elif dice_opt == 2 & point != 10:
+        elif dice_opt == 2 & point < 10:
             print("\nYou don't have enough points")
-        elif dice_opt == 3 & point == 20:
-            dice=3
+        elif dice_opt == 3 & point >= 20:
+            dice = 3
             print('\n Black Dice selected')
-        elif dice_opt == 3 & point != 20:
+        elif dice_opt == 3 & point < 20:
             print("\nYou don't have enough points")
         else:
             print('\nEnter correct option\n')
@@ -57,3 +57,4 @@ while option != 4:
         print("Goodbye")
     else:
         print("Enter Correct Option")
+
